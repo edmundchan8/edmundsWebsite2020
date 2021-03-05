@@ -1,0 +1,111 @@
+*{
+	/*clears any existing padding or margin values*/
+	padding: 0;
+	margin: 0;
+}
+
+/*----------------HEADER-----------------*/
+
+.alignCenter {
+	/*This is required to make the elements appear in the center*/
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	max-width: 1000px;
+}
+
+/*-------------NAV-------------*/
+
+.title {
+	padding: 15px 0px 15px 15px;
+}
+
+.alignCenter nav{
+	max-width: 100%;
+}
+
+.alignCenter ul {
+	/*Centers the li elements*/
+	text-align: center;
+}
+
+.alignCenter li{
+	display: inline-block;
+    padding: 10px;
+	/*widens the distance between the li elements*/
+	margin: 5px 10px;
+}
+
+li a {
+	/*Remove the underline from the links*/
+	text-decoration: none;
+	border: dotted 1px rgba(255, 0, 0, 0);
+	border-radius: 7px;
+	background-color: #f1ffe2;
+}
+
+.image-float-right {
+	float: right;
+	margin: 10px;
+	clear: both;
+	border: solid 1px black;
+}
+
+.image-float-left{
+	float: left;
+	margin: 10px;
+	clear: both;
+	border: solid 1px black;
+}
+
+.active{
+	background-color: #ffd1fd;
+}
+
+//when max-screen size goes below 1200px, navbar reduces to block display, 100% width and appear one on top of each other.
+@media screen and (max-width: 1200px) {
+  .alignCenter li {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*--------------------CONTENT----------------*/
+
+/*make content in the middle and have a width*/
+/*use max width so that smaller browser screens have content wrap within windows*/
+.content-wrap {
+	margin: 10px auto;
+	max-width: 1200px;
+	padding: 30px;
+}
+
+h1 {
+	clear: both;
+}
+
+#align-middle{
+	text-align: center;
+}
+
+.terminologyLight {
+	padding-top: 10px;
+}
+
+.terminologyDark {
+	padding-top: 10px;
+}
+
+/*--------------------FOOTER----------------*/
+
+.footer-div{
+	text-align: center;
+}
+
+/*date and time at bottom right corner*/
+#time{
+	text-align: right;
+	margin-top: 10em;
+}

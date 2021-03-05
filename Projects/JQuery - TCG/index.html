@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Make webpage fit on smaller screens -->
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- -->
+	<title>droppable demo</title>
+	  
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	  
+	<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+	<script
+	src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+	integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+	crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js"></script>
+</head>
+
+<body>
+	<div id="opponentGameSpace" class="column">
+		<div id="opponentHand" class="row">
+		<!-- element with id draggable, js script allows image here to be draggable -->
+		<img src="images/SDV1-001.jpg" id="opponentDraggable" class="card">
+		</div>
+		<div id="opponentAttack" class="row">
+		</div>
+	</div>
+	<br/>
+	<div id="playerGameSpace" class="column">
+		<div id="playerAttack" class="row">
+		</div>
+		<div id="playerHand" class="row">
+		<!-- element with id draggable, js script allows image here to be draggable -->
+		<img src="images/SDV1-001.jpg" id="draggable" class="card">
+		</div>
+	</div>
+	
+</body>
+</html>

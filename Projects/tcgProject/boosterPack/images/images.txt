@@ -1,0 +1,37 @@
+ Volume in drive C is Local Disk
+ Volume Serial Number is F8BF-4A24
+
+ Directory of C:\Users\Edmund\Desktop\WebDeveloperSite\tcgProject\boosterPack\images
+
+12/18/2018  07:39 PM    <DIR>          .
+12/18/2018  07:39 PM    <DIR>          ..
+12/18/2018  07:24 PM           463,793 c_ndr_004.jpg
+12/18/2018  07:31 PM           453,179 c_ndr_012.jpg
+12/18/2018  07:24 PM           490,853 c_ndr_022.jpg
+12/18/2018  07:24 PM           444,034 c_ndr_025.jpg
+12/18/2018  07:24 PM           494,742 c_ndr_026.jpg
+12/18/2018  07:31 PM           451,040 c_ndr_035.jpg
+12/18/2018  07:32 PM           451,478 c_ndr_055.jpg
+12/18/2018  07:25 PM           474,550 c_ndr_062.jpg
+12/18/2018  07:23 PM           441,628 c_ndr_081.jpg
+12/18/2018  07:26 PM           402,894 c_ndr_088.jpg
+12/18/2018  07:28 PM           413,077 c_ndr_094.jpg
+12/18/2018  07:31 PM           393,435 c_ndr_097.jpg
+12/18/2018  07:39 PM                 0 images.txt
+12/18/2018  07:00 PM           791,794 ndr_booster_pack.jpg
+12/18/2018  07:27 PM           458,207 r_ndr_044.jpg
+12/18/2018  07:26 PM           431,839 r_ndr_089.jpg
+12/18/2018  07:27 PM           504,396 r_ndr_092.jpg
+12/18/2018  07:28 PM           476,566 r_ndr_093.jpg
+12/18/2018  07:23 PM           546,849 sec_ndr_002.jpg
+12/18/2018  07:22 PM           524,335 sr_ndr_021.jpg
+12/18/2018  07:14 PM           336,386 sr_ndr_061.jpg
+12/18/2018  07:24 PM           508,266 u_ndr_001.jpg
+12/18/2018  07:25 PM           442,589 u_ndr_007.jpg
+12/18/2018  07:26 PM           447,688 u_ndr_042.jpg
+12/18/2018  07:27 PM           532,790 u_ndr_045.jpg
+12/18/2018  07:32 PM           427,733 u_ndr_054.jpg
+12/18/2018  07:27 PM           458,251 u_ndr_070.jpg
+12/18/2018  07:28 PM           518,621 u_ndr_101.jpg
+              28 File(s)     12,781,013 bytes
+               2 Dir(s)  29,694,697,472 bytes free

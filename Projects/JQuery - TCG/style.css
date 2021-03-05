@@ -1,0 +1,48 @@
+.card {
+	width: 100px;
+	height: 140px;
+}
+	
+#playerGameSpace {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;	
+}
+
+#playerHand {
+	margin: auto;
+	background-color: gray;
+	border: solid blue 1px;
+}
+
+#playerAttack {
+	margin: auto;
+	background-color: yellow;
+	border: solid blue 1px;
+}
+	
+#opponentGameSpace {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	border: 2px solid black;	
+}
+
+#opponentHand {
+	margin: auto;
+	background-color: gray;
+	border: solid blue 1px;
+}
+
+#opponentAttack {
+	margin: auto;
+	background-color: yellow;
+	border: solid blue 1px;
+}	
+	
+/* % width and height of child div */
+.column .row {
+	width: 81%;
+	height: 175px;
+}

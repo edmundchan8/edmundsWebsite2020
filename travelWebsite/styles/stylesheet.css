@@ -1,0 +1,184 @@
+/*---------------------HTML-------------------*/
+body{
+	font-family: 'Source Serif Pro', serif;
+}
+
+/*---------------------HEADER-------------------*/
+.comic-font{
+	font-family: 'Comic Sans MS', 'Source Serif Pro', sans-serif;
+}
+
+.arial-font{
+	font-family: Arial, 'Source Serif Pro', sans-serif;
+}
+
+#blog-name {
+	padding: 0 0 0 180px;
+	font-size: 40px;
+}
+
+.header{
+	background-size: auto;
+	padding: 30px;
+	text-align: left;
+	background-size: contain;
+	/*background-image: url(../images/banner-hiker.jpg);*/
+	font-size: 30px;
+	color: white;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#site-title{
+	text-shadow: 4px 4px #000000;
+}
+
+#search-bar{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+/*---------------------NAVIGATION-------------------*/
+
+#nav-bar{
+	clear: right;
+	font-size: 0; /*remove white space between elements*/
+	list-style-type: none;
+	margin: -30px;
+	text-align: right;	
+}
+
+/*Make navigation list horizontal with padding*/
+#nav-bar li{
+	font-family: Arial, Tahoma, Calibri;
+	text-align: center;
+	font-size: 16px; /*sets size of fonts because previous font-size: 0 removes the fonts*/
+	display: inline-block;
+	padding: 0px;
+}
+
+/*Creates trapezoid shaped nav link*/
+.nav-bar-trapezoid li{
+      border-bottom: 30px solid #08e8de;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      height: 0;
+      width: 100px;
+}
+
+/*remove underline on links*/
+#nav-bar li a{
+	display: block;
+	padding: 6px 6px;
+	text-decoration: none;
+}
+
+/*on hover over link, change colour*/
+#nav-bar li:hover{
+	border-bottom: 30px solid #08BAE8;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      height: 0;
+      width: 100px;
+}
+
+#active-nav-bar{
+	border-bottom: 30px solid #07706b	;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 100px;
+}
+
+#active-nav-bar a{
+	color: white;
+}
+
+/*on hover over link, change font colour*/
+#nav-bar a:hover {
+	color: white;
+}
+
+/*---------------------BODY-------------------*/
+
+#slider-banner{
+	width: 100%;
+	height: 200px;
+	margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+	margin: 5px;
+	padding: 5px;
+	font-size: 16px;
+}
+
+.flex-item {
+    display:flex;
+    align-items: center;
+}
+.flex-item img{
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+.content-center{
+	text-align: center;
+}
+
+.flex-container .content-left{
+	width: 58%;
+}
+
+.flex-container .content-right{
+	width: 38%;
+}
+
+.content-padding{
+	padding: 0 20px;
+}
+
+.content-margin{
+	margin: 0 50px;
+}
+
+.content-justify{
+	text-align: justify;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  margin: 10px
+  padding-top: 10px;
+}
+
+p{
+	font-size: 20px;
+}
+
+.blog-img{
+	float: left;
+	height: 200px;
+	width: 250px;
+	padding: 5px;
+}
+.gallery-img{
+	float: left;
+	height: 150px;
+	width: 200px;
+	padding: 5px;
+}
+
+.blog-titles{
+	font-size: 16px;
+	font-style: italic;
+}

@@ -1,0 +1,125 @@
+/*-----------------NAV------------------*/
+nav{
+	background: linear-gradient(to bottom left, rgba(186,160,1,0), rgba(172,201,80,1));
+}
+
+ul{
+	/*gives nav background colour*/
+    /*list-style-type: none;*/
+    margin: 0;
+}
+
+li a{
+	padding: 14px 16px;
+}
+
+
+/* Change the link background color to purple on hover */
+/* The text changes black too */
+/* border style is transparent, which stops adding an extra pixel of padding every time the border style activates */
+li a:hover {
+	border: dotted 1px rgba(255, 0, 0, 0);
+	border-radius: 15px;
+	padding: 14px 16px;
+    background: linear-gradient(#d9f77b, #efffbf);
+	color: #000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+	margin-top: 13px;
+    padding: 12px 16px;
+    z-index: 1;
+	text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*--------------BODY---------------*/
+/*removes margins on whole page*/
+/*Other, nav background color won't fill whole page*/
+
+body {
+	margin: 0;
+	background-color: #f1f9ef;
+}
+
+/*--------------CONTENT---------------*/
+
+.title-content{
+	border-bottom-style: dotted;
+}
+
+.title{
+	/*access the background image*/
+	background-image: url("../images/blurredBackground.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*shadow effect under title*/
+	box-shadow: 10px 7px 10px #888888;
+	border-style: solid none;
+}
+
+.image-float-right{
+	height: 200px;
+	width: 250px;
+	border-radius: 5px;
+	box-shadow: 5px 5px #c6d8b1;
+}
+
+.image-float-left {
+	height: 200px;
+	width: 250px;
+	border-radius: 5px;
+	box-shadow: 0px 5px 5px #c6d8b1;
+}
+
+.text-background-light {
+	background: linear-gradient(to right, white, #f2f1de);
+}
+
+.text-background-dark {
+	background: linear-gradient(to left, #edffce, #e0efc6);
+}
+
+/*makes image, which is floating, not flow out of p element.*/
+.insurance-provider{
+	overflow: auto;
+}
+
+.insurance-provider-dark{
+	background: linear-gradient(to left, #edffce, #e0efc6);
+	overflow: auto;
+}
+
+.insurance-provider ul {
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+.green-arrow{
+	float: right;
+	border: outset 5px orange;
+	width: 30px;
+	height: 30px;
+	clear: both;	
+}
+
+.line-break {
+	border-top: dashed;
+	padding-bottom: 15px;
+}
+
+.border-left-orange {
+	border-left: solid 5px orange;
+	padding-left: 10px;
+}

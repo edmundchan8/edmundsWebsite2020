@@ -1,0 +1,103 @@
+/* NAVIGATION BAR */
+
+
+
+
+
+/* ALIGNMENT */
+li.nav-link{
+	text-align: right;
+}
+
+
+body, html {
+	height: 100%;
+}
+
+.bg {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; /* Equal to our image */
+	
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blur{
+	  /* Add the blur effect */
+  -webkit-filter: blur(2.5px);
+  filter: blur(2.5px) brightness(50%); 
+}
+
+/* responsive image gallery on front page, linking to different webpages*/
+
+
+div.gallery {
+  border: 2px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+/* CONTENT */
+
+.text-block {
+  position: absolute;
+  top: 150px;
+  left: 20%;
+  right: 20%;
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.text{
+	font-family: Helvetica;
+	font-weight: 700;
+	color: white;
+}
+
+.text-lower{
+	position: absolute;
+	top: 350px;
+}
+
+.text-serif{
+	font-family: Calibri;
+}
+
+
+/*MOBILE AND DESKTOP*/
+
+
+
+@media only screen and (min-width: 768px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+/* Mobile Site */
+{
+	.nav-item{
+		text-align: left;
+	}
+}
+

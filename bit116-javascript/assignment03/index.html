@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>BIT 116 - Assignment 03</title>
+
+<!-- bootstrap code -->   
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<style>
+.jumbotron {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ee8fa+0,d6f9ff+100 */
+	background: rgb(158,232,250); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(158,232,250,1) 0%, rgba(214,249,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,232,250,1)), color-stop(100%,rgba(214,249,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(158,232,250,1) 0%,rgba(214,249,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(158,232,250,1) 0%,rgba(214,249,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(158,232,250,1) 0%,rgba(214,249,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(158,232,250,1) 0%,rgba(214,249,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ee8fa', endColorstr='#d6f9ff',GradientType=0 ); /* IE6-9 */
+	}
+
+	<!-- adding padding to the table to make it look cleaner-->
+table tr {
+	padding-left: 10px;
+}
+
+.smallPrint {
+	font-size: 80%;
+}
+
+</style>
+	
+<!-- j query code -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- jquey code to check for internal js file if the Cdn doesn't work-->
+
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+document.write(unescape("%3Cscript src='jquery-3.2.1.js' type='text/javascript'%3E%3C/script%3E")); }
+</script>
+
+<script src="javascript.js"></script>
+
+</head>
+<body>
+<!-- the 'fluid' container should span the width of the page -->
+<div class="container-fluid" >
+
+<div class="page-header">
+
+	<div class="jumbotron text-center">
+		<h1>Chi Hong Edmund Chan</h1></div>
+<!-- Horizontal list of menus across the top: -->
+</div>
+
+
+	<h3 class="text-center">Associate in Sciences - Transfer Track 2 Graduation Requirement Helper</h3>
+	<br>
+	<table>
+	<!-- Add class=row to tr, and class="col-sm-5" and class="col-sm-7" to create columns in this table, with the second column being larger-->
+		<tr class="row">
+			<td class="col-sm-6">
+			<h4>GENERAL EDUCATION CORE COURSES (25 CREDITS)</h4>
+			<p class="smallPrint">Must be completed within the first 30 credits</p>
+				<h4>Foundations for College Success</h4>
+				<p class="d-none" id="Feedback_ColSucc_Complete" >You have fulfilled the Foundations for College Success requirements.</p>
+				<p class="d-none" id="Feedback_ColSucc_Incomplete">You still need to pass your Foundations for College Success.</p>
+				<p><input type="checkbox" value="col101" id="coll101"> COLL 101 College Strategies (5 Credits)</p>
+			<h4>Communication</h4>
+				<p class="d-none" id="Feedback_Comm_Complete">You have fulfilled the Communication requirements.</p>
+				<p class="d-none" id="Feedback_Comm_Incomplete">You haven't completed the Communication requirements.</p>
+				<p class="d-none" id="Feedback_Missing_Eng101">You must complete English 101</p>
+				<p class="d-none" id="Feedback_Missing_Eng102_Eng235">You also need to pass either English 102 or English 235</p>
+				<p class="d-none" id="Feedback_Missing_AllEng">You haven't completed any English classes.</p>
+				<p>Complete the following</p>
+				<p><input type="checkbox" value="engl101" id="eng101"> ENG&amp;101 English Composition I (5 Credits)</p>
+				<p>Complete only 1 course below:</p>
+				<p><input type="checkbox" value="engl102" id="eng102"> ENG&amp;102 Composition II (5 Credits)</p>
+				<p><input type="checkbox" value="engl235" id="eng235"> ENG&amp;235 Technical Writing (5 Credits)</p>
+			<h4>Quantitative or Symbolic Reasoning: </h4>
+				<p>Complete all of the following</p>
+				<p class="d-none" id="Feedback_QSR_Complete">You have fulfilled the Quantitative or Symbolic 
+				Reasoning requirements.</p>
+				<p class="d-none" id="Feedback_QSR_Incomplete">You have not fulfilled the requirements for Quantitative or Symbolic 
+				Reasoning.</p>
+				<p class="d-none" id="Feedback_Missing_Calc_1">You need to complete MATH&amp;151 as well.</p>
+				<p class="d-none" id="Feedback_Missing_Calc_2">You need to complete MATH&amp;152 as well.</p>
+				<p class="d-none" id="Feedback_Missing_All_Calc">You haven't completed any of the math classes.</p>
+				<p><input type="checkbox" value="calcI" id="math151"> MATH&amp; 151 Calculus I( 5 Credits)</p>
+				<p><input type="checkbox" value="calcII" id="math152"> MATH&amp; 152 Calculus II (5 Credits)</p>
+			</td>
+			
+			<td class="col-sm-6">
+			<h4>HUMANITIES / SOCIAL SCIENCES DISTRIBUTION REQUIREMENT (15 CREDITS)</h4>
+			<p class="smallPrint">No more than five credits may be included from those
+			courses designated HP as performance/skills, applied theory, or lecture/studio courses. Only one course of a world language or
+			ASL at the 100 level may be included. CMST 150, GS 150, HIST 150, HUMAN 150, or SOC 150 may be used to fulfill 5 credits of
+			the Humanities or Social Sciences Distribution requirement. </p>
+				<p class="d-none" id="Feedback_HS_Complete">You have fulfilled all the Humanities requirements.</p>
+				<p class="d-none" id="Feedback_HS_Incomplete">You haven't fulfilled all the Humanities requirements.</p>
+				<p class="d-none" id="Feedback_Missing_H">You have not completed the H class.</p>
+				<p class="d-none" id="Feedback_Missing_SS">You have not completed the SS class.</p>
+				<p class="d-none" id="Feedback_Missing_CMST">You have not completed 1 of your CMST, GS, HIST, HUMAN or SOC class.</p>
+				<p class="d-none" id="Feedback_Missing_Humanities_All">You have not completed any classes.</p>
+				<p><input type="checkbox" value="H course" id="hClass"> H designated course (5 credits)</p>
+				<p><input type="checkbox" value="SS course" id="ssClass"> SS designated course (5 credits)</p>
+				<p><input type="checkbox" value="Humanities course" id="humanitiesClass"> CMST 150, GS 150, HIST 150, HUMAN 150, or SOC 150 (5 Credits)</p>
+				<p id="Feedback_Science_Complete"></p>
+				<p id="Feedback_Science_Incomplete" ></p>
+				<p id="Feedback_Science_No_Lab" ></p>
+				<p id="Feedback_Science_Missing_Second_Discipline" ></p>	
+			<h4>PRE_MAJOR REQUIREMENTS (25-26 CREDITS)</h4>
+			<p class="smallPrint">Students must complete courses from at least two different disciplines, and include at least five 
+			credits	of a lab course (LAB). At least 10 credits required in physical, earth and/or biological sciences. 
+			Students should complete the sequence courses listed below at one institution.</p>
+				<p class="d-none" id="Feedback_Maj_Complete">You have fulfilled all the Pre Major Requirements.</p>
+				<p class="d-none" id="Feedback_Maj_Incomplete">You have not fulfilled all the Pre Major Requirements.</p>
+				<p class="d-none" id="Feedback_Missing_Lab">You must complete at least one LAB.</p>
+				<p class="d-none" id="Feedback_Missing_Math146">You have not completed MATH&amp;146 or MATH&amp;163</p>
+				<p class="d-none" id="Feedback_Missing_Physical">You need to complete 10 credits worth of physical, earth or 
+				biological sciences.</p>
+				<p class="d-none" id="Feedback_Missing_Maj_All">You have not completed any of the Pre Major Requirements.</p>
+				<p><input type="checkbox" value="Chemistry" id="majChemClass"> CHEM&amp;161 General Chemistry w/ Lab 1 or other Science (6 or 5 Credits)</p>
+				<p><input type="checkbox" value="Math146" id="majMathClass"> MATH&amp;146 or MATH&amp;163 Introduction to Statistics or Calculus 3 (5 Credits)</p>
+				<p><input type="checkbox" value="PhysLab1" id="majPhys1"> PHYS&amp;221 General Physics with Lab I</p>
+				<p><input type="checkbox" value="PhysLab2" id="majPhys2"> PHYS&amp;222 General Physics with Lab II</p>
+				<p><input type="checkbox" value="PhysLab3" id="majPhys3"> PHYS&amp;223 General Physics with Lab III</p>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<h4>PROGRAM REQUIRED ELECTIVES (25 CREDITS)</h4>
+	<p class="smallPrint">Remaining elective credits should be planned with the help of an advisor based on the requirements of the specific major at the
+	baccalaureate institution the student selects to attend. Elective credits may be selected from any of the distribution and elective
+	courses. Professional/technical courses numbered 100 or above may be considered restricted electives. No more than 5.0 credits
+	may be included from Restricted Electives List. Consult an advisor for more information.</p>
+	<p class="d-none" id="Feedback_Elec_Complete">You have completed the Program required Elective.</p>
+	<p class="d-none" id="Feedback_Elec_Incomplete">You have not completed the Program required Elective.</p>
+	<p><input type="checkbox" value="reqElec" id="ElecClass"> Professional/technical course</p>
+	<input type="button" value="Check Requirements" id="requirementButton">
+	<br>
+	<br>
+</div>
+</body>
+</html>                                		                                		

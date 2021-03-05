@@ -1,0 +1,359 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+/************ NAVIGATION ************/
+ul{
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+li {
+	display: inline;
+	margin: 0px 0px 0px 10px;
+}
+
+a{
+	padding: 4px 10px;
+}
+
+ul a:hover {
+	text-decoration: underline;
+	background-color: rgba(180, 240, 190, 1);
+	border-radius: 3px;
+	padding: 4px 10px;
+	color: blue;
+}
+
+.sticky-position{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.nav-bg {
+	background-color: white;
+	padding-top: 10px;
+}
+
+.nav-bottom{
+	padding-bottom: 10px;
+}
+
+
+/*********** FONTS ****************/
+
+@font-face {
+  font-family: title-font;
+  src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: p-font;
+  src: url(../fonts/Lusitana-Regular.ttf);
+}
+
+@font-face {
+  font-family: sub-heading-font;
+  src: url(../fonts/Overlock-Black.ttf);
+}
+
+@font-face {
+  font-family: heading-font;
+  src: url(../fonts/Catamaran-ExtraBold.ttf);
+}
+
+#title{
+	font-family: title-font;
+}
+
+.heading-font{
+	font-family: heading-font;
+}
+
+.content-font {
+	font-family: cambria; //p-font;
+}
+
+.sub-heading-font{
+	font-family: sub-heading-font;
+}
+
+.superlarge-font-size {
+	font-size: 64px;
+}
+
+.large-font-size{
+	font-size: 32px;
+}
+
+.strong-font-style{
+	font-weight: bold;
+}
+
+.black-font{
+	color: black;
+}
+
+/**** Paragraph font size ****/
+p{
+	font-size: 22px;
+}
+
+
+/************* text-padding **********/
+h1, h2, h3, h4, h5, h6, p{
+	padding: 10px;
+}
+
+
+/************ CONTENT ************/
+
+
+.white-bg {
+	background-color: white;
+}
+
+.purple-bg {
+	background-image: linear-gradient(to top left, #f0b4cd, rgba(255, 219, 253));
+}
+
+.beige-bg {
+	background-image: linear-gradient(to top, #FEE7DD, #F7CFBD);
+}
+
+
+/*** give greenish background color ***/
+.green-bg {
+	background-image: linear-gradient(to top left, rgba(238, 255, 241, 1), rgba(230, 255, 217, 1));
+}
+
+.add-top-bottom-padding{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.left-right-padding{
+	padding: 0px 10px;
+	}
+	
+.text-content-padding{
+	padding: 10px 10px 0 10px;
+}
+
+.extra-right-padding{
+	padding-right: 30px;
+}
+
+
+
+/************ BORDERS ************/
+.thin-light-outset-topborder{
+	border-width: 3px 0 0 0;
+	border-color: grey;
+	border-style: outset;
+}
+
+.thin-light-outset-border{
+	border-width: 1px 2px 3px 1px;
+	border-color: grey;
+	border-style: outset;
+}
+
+.boxshadow-thin-bottomborder{
+	box-shadow: 0 0 3px 0 grey;
+	border-style: outset;
+}
+
+/* rounding out the "text boxes" */
+.rounded-textbox {
+	border-radius: 25px;
+}
+
+/************ IMAGES ************/
+.rounded-image{
+	border-radius: 50%;
+}
+
+.fitscreen {
+	width: 100%;
+}
+
+.nintey-screen {
+	max-width: 50%;
+	min-height: 100%;
+}
+
+.boxshadow-thick{
+	box-shadow: 7px 7px 10px grey;
+	border-style: outset;
+}
+
+.boxshadow-thin{
+	box-shadow: 5px 7px 2px grey;
+	border-style: outset;
+}
+
+.opacity-half{
+	opacity: 0.5;
+}
+
+/**Text Overlay for images**/
+.text {
+  color: black;
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  text-align: center;
+}
+
+.overlay {  
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 100%;
+  overflow: visible;
+  width: 100%;
+  height: 25%;
+  /* transition: .5s ease; */
+  
+}
+
+.container{
+  position: relative;
+  padding: 0px;
+  width: 100%;
+}
+
+/*
+.container:hover .overlay {
+  height: 60%;  
+}
+*/
+
+
+/************ ALIGNMENT ************/
+
+.align-image-center {
+	display: block;
+	margin: auto;
+}
+
+.align-content-center{
+	text-align: center;
+}
+
+.align-content-right{
+	text-align: right;
+}
+
+.align-content-left{
+	text-align: left;
+}
+
+/************** MOBILE SPECIFIC FEATURES ***************/
+#hide-greeting-mobile{
+	display: none;
+}
+
+
+
+body {
+	width: 100%;
+}
+
+/* Set headings to be center aligned */
+h3, h5 {
+	text-align: center;
+}
+
+/* For mobile phones: */
+ @media only screen and (max-width: 1022px)
+ {
+	/*Center nav menu*/
+	li {
+	display: inline;
+	margin: 0px;
+	}
+	
+	ul{
+		text-align: center;
+		padding: 0px;
+	}
+	
+	a {
+		text-align: center;
+	}
+	
+	/*Make portfolio images center*/
+	.three-column{
+		width: 100%;
+	}
+	
+	/******* FONT  ******/
+	p {
+		font-size: 18px;
+	}
+	
+	.one-column {
+		column-count: 1;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+ }
+
+
+/* Everything after 768px*/
+ @media only screen and (min-width: 856px) {
+	  /* For Desktop: */
+
+	/*** width of portfolio space ***/
+	#portfolio {
+		min-width: 100%;
+	}
+
+	.left-right-padding{
+		padding: 0px 30px;
+	}
+
+	/*Hide name in the about me, and place it above photo*/
+	#hide-greeting-desktop{
+		display: none;
+	}
+
+	#hide-greeting-mobile{
+		display: block;
+	}
+	
+
+	/****************  THREE COLUMN after width 768px ->  *****************/
+
+	.row {
+		display: flex;
+	}
+
+	.three-column {
+		column-count: 3;
+	}
+	
+	.one-column {
+		column-count: 1;
+		width: 33.3%;
+		display: block;
+		margin: auto;
+	}
+}
